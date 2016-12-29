@@ -4,112 +4,44 @@
 	<meta charset="UTF-8">
 	<title>Sass evaluación</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="container">
+	<header>
 		<div class="row">
 			<div class="col s12 m6">
-				<h3 class="left-align">News<span>.</span></h3>
+				<h3>News <span>.</span></h3>
 			</div>
-			<div class="col s12 m4">
-				<form  class="right-align boton">
-					<input type="text" name="search" placeholder="Search..">
-				</form>
-			</div>
-			<div class="">
-				<div class="col 12 m12">
-					<ul class="tabs center-align">
-						<li class="tab col s2"><a href="#test1">World.</a></li>
-						<li class="tab col s2"><a class="active" href="#test2">busines.</a></li>
-						<li class="tab col s2"><a class="active" href="#test2">Politics.</a></li>
-						<li class="tab col s2"><a class="active" href="#test2">Sports.</a></li>
-						<li class="tab col s2"><a class="active" href="#test2">Health.</a></li>
-						<li class="tab col s2"><a class="active" href="#test2">Sciences.</a></li>
-						<li class="tab col s2"><a class="active" href="#test2">Spotlight.</a></li>
-					</ul>
-					<hr>
-				</div>
-			</div>  
-		</div>	
-   </header>
-   <section class="container">
-		<div class="row">
-			<div class="col s12 m7">
-				<a  class ="waves-effect red accent-4 btn"  href="">Popular</a>
-				<img class="responsive-img slide"  src="img/1.png">
-				<!--div class="cuadro">
-					<p>Awesome wordpress theme</p>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-				</div-->
-			</div>
-			<div class="col s12 m5">
-				<a class ="waves-effect red accent-4 btn"  href="">Latest</a>
-				<img class="responsive-img side" src="img/6.png">
-			</div>
-			<div class="row">
-				<div class="col s12 m5">
-					<div class="col s12 m6">
-						<a href=""><img class="fotoside responsive-img " src="img/8.png"></a>
-					</div>
-					<div class="col s12 m6">
-						<a href=""><img class="fotoside responsive-img" src="img/13.png"></a>
-					</div>
+			<div class="col s12 m6">
+				<div id='search'>
+					<div class='content-wrapper'>
+						<form action='/search' id='searchform' method='get'>
+							<input id='search-form' name='q' onblur='if(this.value=='')this.value=this.defaultValue;' onfocus='if(this.value==this.defaultValue)this.value=''' type='text' value='Search here ...'/><button class='search-button' title='Search' type='submit'><img alt='search button' src='http://4.bp.blogspot.com/-aU9ua18FGYk/U144px0NI1I/AAAAAAAACfc/8Q6UtPayacw/s1600/search.png' title='Search'/>
+						</button>
+					</form>
 				</div>
 			</div>
 		</div>
-    </section>
-    <section class="container">
-    	<div class="row">
-    		<div class="col s12 m8">
-    			<div class="row">
-    				<div class="col s12 m6">
-    					<h5>Popular News</h5>
-    					<hr>
-    				</div>
-    			</div>		
-    				<div class="col s6 m3">
-    					<img src="img/13 (1).png">
-    				</div>
-    				<div class="col s6 m3">
-    					<p><span>26 May 2013</span></p>
-    					<p class="text">Lorem ipsum adipiscing elit.</p>
-    				</div>
-    				<div class="col s6 m3">
-    					<img src="img/13 (1).png">
-    				</div>
-    				<div class="col s6 m3">
-    					<p><span>26 May 2013</span></p>
-    					<p class="text">Lorem ipsum adipiscing elit.</p>
-    				</div>
-    				<div class="col s6 m3">
-    					<img src="img/13 (1).png">
-    				</div>
-    				<div class="col s6 m3">
-    					<p><span>26 May 2013</span></p>
-    					<p class="text">Lorem ipsum adipiscing elit.</p>
-    				</div>
-    				<div class="col s6 m3">
-    					<img src="img/13 (1).png">
-    				</div>
-    				<div class="col s6 m3">
-    					<p><span>26 May 2013</span></p>
-    					<p class="text">Lorem ipsum adipiscing elit.</p>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+	</div>
+		<div class="row">
+			<div class="col s12 m12">
+				<ul>
+				   <li><a href="#">World.</a></li>
+					<li><a href="#">busines.</a></li>
+					<li><a href="#">Politics.</a></li>
+					<li><a href="#">Sports.</a></li>
+					<li><a href="#">Health.</a></li>
+					<li><a href="#">Sciences.</a></li>
+					<li><a href="#">Spotlight.</a></li>
+				</ul>
+				<hr>
+			</div>
+		</div>
+	</header>
 	
 	
-					
-
-
-
-
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
-		<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
