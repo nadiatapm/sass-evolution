@@ -4,29 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Sass evaluación</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
+	<header class="container">
 		<div class="row">
-			<div class="col s12 m6">
+		<div class="col s12 m12">
+			<div id="mySidenav" class="sidenav hide-on-large-only">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">World.</a>
+				<a href="#">busines.</a>
+				<a href="#">Politics.</a>
+				<a href="#">Sports.</a>
+				<a href="#">Health.</a>
+				<a href="#">Sciences.</a>
+				<a href="#">Spotlight.</a>
+			</div>
+			<span class="hide-on-large-only" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				<h3>News <span>.</span></h3>
 			</div>
-			<div class="col s12 m6">
-				<div id='search'>
-					<div class='content-wrapper'>
-						<form action='/search' id='searchform' method='get'>
-							<input id='search-form' name='q' onblur='if(this.value=='')this.value=this.defaultValue;' onfocus='if(this.value==this.defaultValue)this.value=''' type='text' value='Search here ...'/><button class='search-button' title='Search' type='submit'><img alt='search button' src='http://4.bp.blogspot.com/-aU9ua18FGYk/U144px0NI1I/AAAAAAAACfc/8Q6UtPayacw/s1600/search.png' title='Search'/>
-						</button>
-					</form>
-				</div>
-			</div>
 		</div>
-	</div>
-		<div class="row">
-			<div class="col s12 m12">
+		<div class="row hide-on-small-only">
+			<div class="col s12 m9">
 				<ul>
-				   <li><a href="#">World.</a></li>
+					<li><a href="#">World.</a></li>
 					<li><a href="#">busines.</a></li>
 					<li><a href="#">Politics.</a></li>
 					<li><a href="#">Sports.</a></li>
@@ -34,12 +36,230 @@
 					<li><a href="#">Sciences.</a></li>
 					<li><a href="#">Spotlight.</a></li>
 				</ul>
-				<hr>
+			</div>
+			<div class="col s12 m3">
+				<input  type="search" id="search" placeholder="buscar...">
 			</div>
 		</div>
+		<hr>
+		
 	</header>
-	
-	
+	<section class="container">
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="col s12 m7">
+				<!--class="material-icons derecha">skip_previous</i>
+					<i class="material-icons izquierda">skip_next</i-->
+					<img class="responsive-img primera" src="img/1.png">
+					<div class="cuadro">
+						<p class="hide-on-small-only">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					</div>
+				</div>
+				<div class="col s12 m5">
+					<img class="fotodos  responsive-img" src="img/6.png">
+					<div class="col s12 m12">
+						<div class="fotot col s6 m6">
+							<img class="responsive-img" src="img/13 (1).png">
+						</div>
+						<div class=" fotot col s6 m6">
+							<img class="responsive-img" src="img/6 (1).png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="col s12 m4">
+					<h4>Popular News</h4>
+					<hr>
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/5 (1).png">
+						</div>	
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+					<hr class="borde">
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/6 (1).png" alt="">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+					<hr class="borde">
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/11.png" alt="">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+					<hr class="borde">
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/8.png" alt="">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<h4>Hot News</h4>
+					<hr>
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/12.png">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+					<hr class="borde">
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/13 (1).png">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+					<hr class="borde">
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/5 (1).png">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+					<hr class="borde">
+					<div class="col s12 m12">
+						<div class="col s6 m6">
+							<img src="img/9.png">
+						</div>
+						<div class="col s6 m6">
+							<h6>26 May,2013.</h6>
+							<p class="text">Lorem ipsum dolor sit ame elit.</p>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+							<i class="material-icons star">star</i>
+						</div>
+					</div>
+				</div>
+			<div class="col s12 m4">
+				<div class="col s12 m12">
+					<h4>Stay Connected</h4>
+					<hr>
+				</div>
+				<div class="col s12 m12">
+					<div class="col s4 m4">
+						<img class="social responsive-img" src="img/centro-comercial-wifi-sesion_318-84528.jpg">
+					</div>
+					<div class="col s4 m4">
+						<img  class="social responsive-img" src="img/facebook-logo_318-76797.jpg">	
+					</div>
+					<div class="col s4 m4">
+						<img class="social responsive-img" src="img/red-social.png">
+					</div>
+				</div>
+		   </div>
+		   <div class="col s12 m4">
+		   	<h4>Accordion</h4>
+		   	<hr>
+		   	<div class="col s12 m12">
+		   		<div class="col s2 m2">
+		   			<i class="material-icons">library_add</i>
+		   		</div>
+		   		<div class="col s10 m10">
+		   			<h6>Prosuere Clubre</h6>
+		   		</div>
+		   		<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		   	</div>
+		   	<hr class="borde">
+		   	<div class="col s12 m12">
+		   		<div class="col s2 m2">
+		   			<i class="material-icons">library_add</i>
+		   		</div>
+		   		<div class="col s10 m10">
+		   			<h6>Lubella Mest</h6>
+		   		</div>
+		   	</div>
+		   	<hr class="borde">
+		   	<div class="col s12 m12">
+		   		<div class="col s2 m2">
+		   			<i class="material-icons">library_add</i>
+		   		</div>
+		   		<div class="col s10 m10">
+		   			<h6>Tincumel mest</h6>
+		   		</div>
+			</div>	
+			<hr class="borde">
+		   </div>
+	</section>
+	<section class="container">
+		<div class="row">
+			<div class="col s12 m8">
+				<h4>Life styles</h4>
+				<hr>
+				<div class="col s12 m4">
+					<img src="img/24 (1).png">
+				</div>	
+			</div>
+			
+		</div>	
+	</section>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
 	<script type="text/javascript" src="js/main.js"></script>

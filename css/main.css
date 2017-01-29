@@ -6357,7 +6357,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 body h3 {
-  margin-left: 15px; }
+  margin-left: 15px;
+  color: #838383; }
 body span {
   color: #d50000;
   padding: 0; }
@@ -6367,8 +6368,8 @@ body ul li {
   body ul li a {
     text-transform: uppercase;
     color: #838383;
-    padding: 10px 50px;
-    margin-left: 15px; }
+    padding: 1px;
+    margin-left: 25px; }
   body ul li a {
     color: #838383; }
   body ul li a:hover {
@@ -6378,70 +6379,80 @@ body ul li {
 body hr {
   background-color: #d50000;
   height: 2px; }
-body #search {
-  position: relative;
-  font-size: 13px;
-  font-family: 'Anaheim',Arial,Helvetica,sans-serif;
-  float: right;
-  margin-top: 7px;
-  right: 18px; }
-body #search-form {
-  background-color: #f3f3f3;
-  height: 32px;
-  line-height: 32px;
-  border: 0 none;
-  font-family: 'Anaheim',Arial,Helvetica,sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #bbb;
-  width: 150px;
-  border-radius: 5px;
-  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.2);
-  padding: 0 10px;
-  transition: all 0.5s ease 0s; }
-body #search-form .search-button, body #search-form .search-button:hover {
-  transition: all 0.5s ease 0s;
-  height: 21px;
-  width: 21px;
-  line-height: 30px;
-  background-color: #f6f6f6;
-  border: 0 none;
-  float: right;
-  cursor: pointer;
-  outline: none; }
-body #search-form:hover {
-  background-color: #f0f0f0; }
-body #search-form:focus {
-  background-color: #eee;
-  text-shadow: none !important;
-  outline: none;
-  color: #000000; }
-body #box {
-  display: none; }
-body .search-text {
-  font-size: 13px;
-  font-family: 'Anaheim';
-  float: right;
-  cursor: pointer; }
-body .search-text:hover {
-  color: #000000; }
-body button, body button[disabled]:active {
-  font-size: 24px;
-  font-family: 'Oswald';
-  font-weight: 400;
-  border: none;
-  padding: 3px 8px;
+body .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #838383;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+body .sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  background: #f6f6f6;
-  color: #e2614c;
-  display: inline-block;
-  cursor: pointer;
-  transition: all 0.6s ease-in-out; }
-body button:hover {
+  font-size: 25px;
   color: #d50000;
-  background: #f6f6f6; }
-body button:active {
+  display: block;
+  transition: 0.3s; }
+body .sidenav a:hover, body .offcanvas a:focus {
+  color: #f1f1f1; }
+body .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+@media screen and (max-height: 450px) {
+  body .sidenav {
+    padding-top: 15px; }
+  body .sidenav a {
+    font-size: 18px; } }
+body .fotodos img {
+  height: 300px; }
+body .fotot {
+  padding: 0 !important; }
+
+.social {
+  margin: 7px 0 10px;
+  padding: 1px;
+  height: 50px !important;
+  color: #838383; }
+
+div {
+  margin-top: 5px; }
+  div h6 {
+    color: #d50000;
+    margin-left: 7px !important; }
+
+.text {
+  color: #838383;
+  margin-left: 10px !important;
+  font-size: 12px; }
+
+div h4 {
+  color: #838383; }
+
+div .material-icons {
   color: #d50000;
-  background: #f6f6f6; }
+  font-size: 14px; }
+  div .material-icons h6 p {
+    color: #838383; }
+
+.borde {
+  background-color: #eeeeee;
+  height: 1px; }
+
+.primera {
+  position: absolute; }
+
+.cuadro {
+  position: relative;
+  margin-left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 280px; }
 
 /*# sourceMappingURL=main.css.map */
