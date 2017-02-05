@@ -6410,9 +6410,10 @@ body .sidenav .closebtn {
     padding-top: 15px; }
   body .sidenav a {
     font-size: 18px; } }
-body .fotodos img {
-  height: 300px; }
-body .fotot {
+body .fdos {
+  height: 250px !important; }
+body .ftres {
+  height: 105px;
   padding: 0 !important; }
 
 .social {
@@ -6453,6 +6454,13 @@ div .material-icons {
   margin-left: 20px;
   color: white;
   background: rgba(0, 0, 0, 0.5);
-  margin-top: 280px; }
+  margin-top: 250px; }
+
+/*h5{
+	position:relative;
+	margin-top:70px;
+	background-color:$red;
+	color:white
+}*/
 
 /*# sourceMappingURL=main.css.map */

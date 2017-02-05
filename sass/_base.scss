@@ -77,16 +77,15 @@ body{
 			font-size: 18px;
 		}
 	}
-	.fotodos{
-		img{
-			height:300px;
-		}
+	.fdos{
+		
+		height:250px!important;
 	}
-	.fotot{
+	.ftres{
+		height:105px;
 		padding:0!important;
-
 	}
-	
+
 }		
 
 .social{
@@ -140,5 +139,13 @@ div{
 	margin-left:20px;
 	color:white;
 	background:rgba(0, 0, 0, 0.5);
-	margin-top:280px;
-}	
+	margin-top:250px;
+}
+
+/*h5{
+	position:relative;
+	margin-top:70px;
+	background-color:$red;
+	color:white
+}*/
+
